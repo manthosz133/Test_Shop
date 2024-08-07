@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ร้านค้าขายเสื้อผ้า</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header>
+            <h1>ร้านค้าขายเสื้อผ้า</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">หน้าแรก</a></li>
+                    <li><a href="#about">เกี่ยวกับเรา</a></li>
+                    <li><a href="#products">สินค้า</a></li>
+                    <li><a href="#contact">ติดต่อเรา</a></li>
+                    <div class="login-container">
+                        <a href="login.html" id="login-btn" class="login-btn"><i class="fas fa-sign-in-alt"></i> Login</a>
+                        <a href="#" id="logout-btn" class="login-btn" style="display: none;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+    <section id="about">
+        <h2>เกี่ยวกับเรา</h2>
+        <p>เราคือร้านค้าขายเสื้อผ้าที่มีคุณภาพและราคาย่อมเยา เพื่อให้คุณได้เลือกซื้อเสื้อผ้าที่คุณชอบ</p>
+    </section>
+
+    <section id="products">
+        <h2>สินค้า</h2>
+        <div class="product">
+            <img src="img/9638667.jpg" alt="เสื้อ oversite">
+            <div class="product-info">
+                <h3>เสื้อ oversite</h3>
+                <p class="text">ราคา: 199 บาท</p>
+                <button>เพิ่มในตะกร้า</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="img/9704733.jpg" alt="เสื้อ oversite">
+            <div class="product-info">
+                <h3>เสื้อ oversite</h3>
+                <p class="text">ราคา: 199 บาท</p>
+                <button>เพิ่มในตะกร้า</button>
+            </div>
+        </div>
+        <button class="order-btn">สั่งซื้อ</button>
+    </section>
+
+    <section id="contact">
+        <h2>ติดต่อเรา</h2>
+        <div class="contact-content">
+            <div class="contact-details">
+                <p>หากมีคำถามหรือต้องการข้อมูลเพิ่มเติม โปรดติดต่อเราที่:</p>
+                <p>182 ซ.จรัญสนิทวงศ์ 13 วัดท่าพระ บางกอกใหญ่ กรุงเทพฯ 10600</p>
+                <p>อีเมล: 66309010010@thonburi.ac.th</p>
+                <p>โทร: 01-234-5678</p>
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3874.0138156093454!2d100.53725431483097!3d13.745168990358353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ed62c65c3c7%3A0x88b66d7c3272bb93!2z4Lia4Lij4Lih4LmA4Lih4Liq4LmM4Lih4Lij4LmJ4Lit4LiZ4Liw4Lih4LiI4Liy4Liq4Lih4Li04Lih4LiB4Lip4Lix4LiX4LmJ!5e0!3m2!1sth!2sth!4v1626715829671!5m2!1sth!2sth" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="contact-form">
+                    <h3>ส่งข้อความถึงเรา</h3>
+                    <form action="submit_contact.php" method="post">
+                        <label for="name">ชื่อ:</label>
+                        <input type="text" id="name" name="name" required>
+                        
+                        <label for="email">อีเมล:</label>
+                        <input type="email" id="email" name="email" required>
+                        
+                        <label for="message">ข้อความ:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                        
+                        <button type="submit">ส่งข้อความ</button>
+                    </form>
+                </div>
+                <div class="additional-info">
+                    <h3>ช่วงเวลาทำการ</h3>
+                    <p>จันทร์ - ศุกร์: 09:00 - 18:00</p>
+                    <p>เสาร์ - อาทิตย์: 10:00 - 17:00</p>
+                    
+                    <h3>ช่องทางติดต่อเพิ่มเติม</h3>
+                    <p>Facebook: <a href="#">ร้านค้าขายเสื้อผ้า</a></p>
+                    <p>Instagram: <a href="#">@clothingstore</a></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 ร้านค้าขายเสื้อผ้า</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

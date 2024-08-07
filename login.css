@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom, #303074, #4c4594, #694F8E); /* โทนสีที่เลือกไว้ */
+    color: #fff;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form {
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #FFDFD6; /* Peach Light */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+#form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #694F8E; /* Dark Purple */
+}
+
+.input-control {
+    margin-bottom: 15px;
+}
+
+.input-control label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-control input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #B692C2; /* Light Purple */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-submit,
+.button-reset {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-submit {
+    background-color: #E3A5C7; /* Light Pink */
+    color: #fff;
+}
+
+.button-reset {
+    background-color: #694F8E; /* Dark Purple */
+    color: #fff;
+}
+
+.button-submit:hover,
+.button-reset:hover {
+    opacity: 0.8;
+}
+
+.register {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.register a {
+    color: #694F8E; /* Dark Purple */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
